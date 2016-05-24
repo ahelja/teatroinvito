@@ -6018,7 +6018,7 @@ var Iframe = wp.media.View.extend({
 	 */
 	render: function() {
 		this.views.detach();
-		this.$el.html( '<iframe src="' + this.controller.state().get('src') + '" />' );
+		this.$el.html( '<iframe src="/teatroinvito/v4/' + this.controller.state().get('src') + '" />' );
 		this.views.render();
 		return this;
 	}

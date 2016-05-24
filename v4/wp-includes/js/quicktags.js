@@ -654,7 +654,7 @@ function edButton(id, display, tagStart, tagEnd, access) {
 		var src = prompt(quicktagsL10n.enterImageURL, defaultValue), alt;
 		if ( src ) {
 			alt = prompt(quicktagsL10n.enterImageDescription, '');
-			this.tagStart = '<img src="' + src + '" alt="' + alt + '" />';
+			this.tagStart = '<img src="/teatroinvito/v4/' + src + '" alt="' + alt + '" />';
 			qt.TagButton.prototype.callback.call(this, e, c, ed);
 		}
 	};

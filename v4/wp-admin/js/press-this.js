@@ -323,7 +323,7 @@
 					link = src;
 				}
 
-				newContent = '<a href="/teatroinvito/v4/' + link + '"><img class="alignnone size-full" src="' + src + '" alt="" /></a>';
+				newContent = '<a href="/teatroinvito/v4/' + link + '"><img class="alignnone size-full" src="/teatroinvito/v4/' + src + '" alt="" /></a>';
 			} else {
 				newContent = '[embed]' + src + '[/embed]';
 			}

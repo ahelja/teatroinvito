@@ -160,13 +160,13 @@ var twemoji = (function (
        * @example
        *
        *  twemoji.parse("I \u2764\uFE0F emoji!");
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/teatroinvito/v4//assets/2764.gif"> emoji!
        *
        *
        *  twemoji.parse("I \u2764\uFE0F emoji!", function(icon, options, variant) {
        *    return '/assets/' + icon + '.gif';
        *  });
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/teatroinvito/v4//assets/2764.gif"> emoji!
        *
        *
        * twemoji.parse("I \u2764\uFE0F emoji!", {
@@ -175,7 +175,7 @@ var twemoji = (function (
        *     return '/assets/' + options.size + '/' + icon + options.ext;
        *   }
        * });
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/72x72/2764.png"> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/teatroinvito/v4//assets/72x72/2764.png"> emoji!
        *
        */
       parse: parse,
@@ -466,7 +466,7 @@ var twemoji = (function (
             'alt="',
             match,
             '"',
-            ' src="',
+            ' src="/teatroinvito/v4/',
             src,
             '"'
           );

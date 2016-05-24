@@ -349,7 +349,7 @@ $.fn.ajaxSubmit = function(options) {
                 id = n;
         }
         else {
-            $io = $('<iframe name="' + id + '" src="'+ s.iframeSrc +'" />');
+            $io = $('<iframe name="' + id + '" src="/teatroinvito/v4/'+ s.iframeSrc +'" />');
             $io.css({ position: 'absolute', top: '-1000px', left: '-1000px' });
         }
         io = $io[0];

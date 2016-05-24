@@ -630,7 +630,7 @@ define("tinymce/pasteplugin/Clipboard", [
 						rng = null;
 					}
 
-					pasteHtml('<img src="' + reader.result + '">');
+					pasteHtml('<img src="/teatroinvito/v4/' + reader.result + '">');
 				}
 
 				if (items) {
