@@ -275,7 +275,7 @@ var wpLink;
 		},
 
 		buildHtml: function(attrs) {
-			var html = '<a href="' + attrs.href + '"';
+			var html = '<a href="/teatroinvito/v4/' + attrs.href + '"';
 
 			if ( attrs.target ) {
 				html += ' target="' + attrs.target + '"';

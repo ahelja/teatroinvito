@@ -8362,7 +8362,7 @@ UploaderWindow = wp.media.View.extend({
 	initialize: function() {
 		var uploader;
 
-		this.$browser = $('<a href="#" class="browser" />').hide().appendTo('body');
+		this.$browser = $('<a href="/teatroinvito/v4/#" class="browser" />').hide().appendTo('body');
 
 		uploader = this.options.uploader = _.defaults( this.options.uploader || {}, {
 			dropzone:  this.$el,

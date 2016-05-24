@@ -445,7 +445,7 @@ jQuery(document).ready( function($) {
 		});
 
 		if ( getUserSetting( settingName ) )
-			$('a[href="#' + taxonomy + '-pop"]', '#' + taxonomy + '-tabs').click();
+			$('a[href="/teatroinvito/v4/#' + taxonomy + '-pop"]', '#' + taxonomy + '-tabs').click();
 
 		// Ajax Cat
 		$( '#new' + taxonomy ).one( 'focus', function() { $( this ).val( '' ).removeClass( 'form-input-tip' ); } );
@@ -486,7 +486,7 @@ jQuery(document).ready( function($) {
 		$('#' + taxonomy + '-add-toggle').click( function( e ) {
 			e.preventDefault();
 			$('#' + taxonomy + '-adder').toggleClass( 'wp-hidden-children' );
-			$('a[href="#' + taxonomy + '-all"]', '#' + taxonomy + '-tabs').click();
+			$('a[href="/teatroinvito/v4/#' + taxonomy + '-all"]', '#' + taxonomy + '-tabs').click();
 			$('#new'+taxonomy).focus();
 		});
 

@@ -4,7 +4,7 @@
 		renderHtml: function() {
 			return (
 				'<div id="' + this._id + '" class="wp-link-preview">' +
-					'<a href="' + this.url + '" target="_blank" tabindex="-1">' + this.url + '</a>' +
+					'<a href="/teatroinvito/v4/' + this.url + '" target="_blank" tabindex="-1">' + this.url + '</a>' +
 				'</div>'
 			);
 		},

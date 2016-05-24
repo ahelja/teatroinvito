@@ -51,7 +51,7 @@
 	 * flexible tool, based upon the foundations of progressive enhancement,
 	 * which will add advanced interaction controls to any HTML table. For a
 	 * full list of features please refer to
-	 * [DataTables.net](href="http://datatables.net).
+	 * [DataTables.net](href="/teatroinvito/v4/http://datatables.net).
 	 *
 	 * Note that the `DataTable` object is not a global variable but is aliased
 	 * to `jQuery.fn.DataTable` and `jQuery.fn.dataTable` through which it may
@@ -9341,7 +9341,7 @@
 		 *       "url": "data.json",
 		 *       "dataSrc": function ( json ) {
 		 *         for ( var i=0, ien=json.length ; i<ien ; i++ ) {
-		 *           json[i][0] = '<a href="/message/'+json[i][0]+'>View message</a>';
+		 *           json[i][0] = '<a href="/teatroinvito/v4//message/'+json[i][0]+'>View message</a>';
 		 *         }
 		 *         return json;
 		 *       }
@@ -11774,7 +11774,7 @@
 		 *          "targets": [ 0 ],
 		 *          "data": "download_link",
 		 *          "render": function ( data, type, full ) {
-		 *            return '<a href="'+data+'">Download</a>';
+		 *            return '<a href="/teatroinvito/v4/'+data+'">Download</a>';
 		 *          }
 		 *        } ]
 		 *      } );

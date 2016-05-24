@@ -2183,7 +2183,7 @@ Foundation.Keyboard.handleKey(e,'Tabs',{open:function open(){$element.find('[rol
    * Public method for selecting a content pane to display.
    * @param {jQuery | String} elem - jQuery object or string of the id of the pane to display.
    * @function
-   */},{key:'selectTab',value:function selectTab(elem){var idStr;if((typeof elem==='undefined'?'undefined':_typeof(elem))==='object'){idStr=elem[0].id;}else {idStr=elem;}if(idStr.indexOf('#')<0){idStr='#'+idStr;}var $target=this.$tabTitles.find('[href="'+idStr+'"]').parent('.'+this.options.linkClass);this._handleTabChange($target);}},{key:'_setHeight', /**
+   */},{key:'selectTab',value:function selectTab(elem){var idStr;if((typeof elem==='undefined'?'undefined':_typeof(elem))==='object'){idStr=elem[0].id;}else {idStr=elem;}if(idStr.indexOf('#')<0){idStr='#'+idStr;}var $target=this.$tabTitles.find('[href="/teatroinvito/v4/'+idStr+'"]').parent('.'+this.options.linkClass);this._handleTabChange($target);}},{key:'_setHeight', /**
    * Sets the height of each panel to the height of the tallest panel.
    * If enabled in options, gets called on media query change.
    * If loading content via external source, can be called directly or with _reflow.
@@ -2447,7 +2447,7 @@ factory(jQuery);}})( /** @lends <global> */function($){"use strict"; /**
 	 * flexible tool, based upon the foundations of progressive enhancement,
 	 * which will add advanced interaction controls to any HTML table. For a
 	 * full list of features please refer to
-	 * [DataTables.net](href="http://datatables.net).
+	 * [DataTables.net](href="/teatroinvito/v4/http://datatables.net).
 	 *
 	 * Note that the `DataTable` object is not a global variable but is aliased
 	 * to `jQuery.fn.DataTable` and `jQuery.fn.dataTable` through which it may
@@ -5067,7 +5067,7 @@ ien=settings.asDestroyStripes.length;if(ien){jqTbody.children().each(function(i)
 		 *       "url": "data.json",
 		 *       "dataSrc": function ( json ) {
 		 *         for ( var i=0, ien=json.length ; i<ien ; i++ ) {
-		 *           json[i][0] = '<a href="/message/'+json[i][0]+'>View message</a>';
+		 *           json[i][0] = '<a href="/teatroinvito/v4//message/'+json[i][0]+'>View message</a>';
 		 *         }
 		 *         return json;
 		 *       }
@@ -7139,7 +7139,7 @@ ien=settings.asDestroyStripes.length;if(ien){jqTbody.children().each(function(i)
 		 *          "targets": [ 0 ],
 		 *          "data": "download_link",
 		 *          "render": function ( data, type, full ) {
-		 *            return '<a href="'+data+'">Download</a>';
+		 *            return '<a href="/teatroinvito/v4/'+data+'">Download</a>';
 		 *          }
 		 *        } ]
 		 *      } );

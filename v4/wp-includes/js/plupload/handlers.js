@@ -48,7 +48,7 @@ function fileUploading( up, file ) {
 	if ( max > hundredmb && file.size > hundredmb ) {
 		setTimeout( function() {
 			if ( file.status < 3 && file.loaded === 0 ) { // not uploading
-				wpFileError( file, pluploadL10n.big_upload_failed.replace( '%1$s', '<a class="uploader-html" href="#">' ).replace( '%2$s', '</a>' ) );
+				wpFileError( file, pluploadL10n.big_upload_failed.replace( '%1$s', '<a class="uploader-html" href="/teatroinvito/v4/#">' ).replace( '%2$s', '</a>' ) );
 				up.stop(); // stops the whole queue
 				up.removeFile( file );
 				up.start(); // restart the queue
@@ -213,7 +213,7 @@ function itemAjaxError(id, message) {
 		return;
 
 	item.html('<div class="error-div">' +
-				'<a class="dismiss" href="#">' + pluploadL10n.dismiss + '</a>' +
+				'<a class="dismiss" href="/teatroinvito/v4/#">' + pluploadL10n.dismiss + '</a>' +
 				'<strong>' + pluploadL10n.error_uploading.replace('%s', jQuery.trim(filename)) + '</strong> ' +
 				message +
 				'</div>').data('last-err', id);
@@ -306,7 +306,7 @@ function uploadError(fileObj, errorCode, message, uploader) {
 			max = parseInt( uploader.settings.filters.max_file_size, 10 );
 
 			if ( max > hundredmb && fileObj.size > hundredmb )
-				wpFileError( fileObj, pluploadL10n.big_upload_failed.replace('%1$s', '<a class="uploader-html" href="#">').replace('%2$s', '</a>') );
+				wpFileError( fileObj, pluploadL10n.big_upload_failed.replace('%1$s', '<a class="uploader-html" href="/teatroinvito/v4/#">').replace('%2$s', '</a>') );
 			else
 				wpQueueError(pluploadL10n.io_error);
 			break;
@@ -332,7 +332,7 @@ function uploadSizeError( up, file, over100mb ) {
 	var message;
 
 	if ( over100mb )
-		message = pluploadL10n.big_upload_queued.replace('%s', file.name) + ' ' + pluploadL10n.big_upload_failed.replace('%1$s', '<a class="uploader-html" href="#">').replace('%2$s', '</a>');
+		message = pluploadL10n.big_upload_queued.replace('%s', file.name) + ' ' + pluploadL10n.big_upload_failed.replace('%1$s', '<a class="uploader-html" href="/teatroinvito/v4/#">').replace('%2$s', '</a>');
 	else
 		message = pluploadL10n.file_exceeds_size_limit.replace('%s', file.name);
 

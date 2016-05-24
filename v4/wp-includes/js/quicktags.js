@@ -630,7 +630,7 @@ function edButton(id, display, tagStart, tagEnd, access) {
 		if ( t.isOpen(ed) === false ) {
 			URL = prompt( quicktagsL10n.enterURL, defaultValue );
 			if ( URL ) {
-				t.tagStart = '<a href="' + URL + '">';
+				t.tagStart = '<a href="/teatroinvito/v4/' + URL + '">';
 				qt.TagButton.prototype.callback.call(t, e, c, ed);
 			}
 		} else {

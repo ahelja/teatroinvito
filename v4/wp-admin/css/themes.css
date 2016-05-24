@@ -583,8 +583,8 @@ body.folded .theme-overlay .theme-wrap {
 }
 
 /* Hide-if-customize for items we can't add classes to */
-.customize-support .theme-overlay .theme-actions a[href="themes.php?page=custom-header"],
-.customize-support .theme-overlay .theme-actions a[href="themes.php?page=custom-background"] {
+.customize-support .theme-overlay .theme-actions a[href="/teatroinvito/v4/themes.php?page=custom-header"],
+.customize-support .theme-overlay .theme-actions a[href="/teatroinvito/v4/themes.php?page=custom-background"] {
 	display: none;
 }
 

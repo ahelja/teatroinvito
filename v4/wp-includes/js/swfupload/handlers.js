@@ -154,7 +154,7 @@ function itemAjaxError(id, html) {
 	var filename = jQuery('.filename', item).text();
 
 	item.html('<div class="error-div">'
-				+ '<a class="dismiss" href="#">' + swfuploadL10n.dismiss + '</a>'
+				+ '<a class="dismiss" href="/teatroinvito/v4/#">' + swfuploadL10n.dismiss + '</a>'
 				+ '<strong>' + swfuploadL10n.error_uploading.replace('%s', filename) + '</strong><br />'
 				+ html
 				+ '</div>');
@@ -257,7 +257,7 @@ function wpFileError(fileObj, message) {
 	var filename = jQuery('.filename', item).text();
 
 	item.html('<div class="error-div">'
-				+ '<a class="dismiss" href="#">' + swfuploadL10n.dismiss + '</a>'
+				+ '<a class="dismiss" href="/teatroinvito/v4/#">' + swfuploadL10n.dismiss + '</a>'
 				+ '<strong>' + swfuploadL10n.error_uploading.replace('%s', filename) + '</strong><br />'
 				+ message
 				+ '</div>');

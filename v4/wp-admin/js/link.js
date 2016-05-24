@@ -21,7 +21,7 @@ jQuery(document).ready( function($) {
 		return false;
 	});
 	if ( getUserSetting('cats') )
-		$('#category-tabs a[href="#categories-pop"]').click();
+		$('#category-tabs a[href="/teatroinvito/v4/#categories-pop"]').click();
 
 	// Ajax Cat
 	newCat = $('#newcat').one( 'focus', function() { $(this).val( '' ).removeClass( 'form-input-tip' ); } );
@@ -53,14 +53,14 @@ jQuery(document).ready( function($) {
 		addAfter: catAddAfter
 	} );
 
-	$('a[href="#categories-all"]').click(function(){deleteUserSetting('cats');});
-	$('a[href="#categories-pop"]').click(function(){setUserSetting('cats','pop');});
+	$('a[href="/teatroinvito/v4/#categories-all"]').click(function(){deleteUserSetting('cats');});
+	$('a[href="/teatroinvito/v4/#categories-pop"]').click(function(){setUserSetting('cats','pop');});
 	if ( 'pop' == getUserSetting('cats') )
-		$('a[href="#categories-pop"]').click();
+		$('a[href="/teatroinvito/v4/#categories-pop"]').click();
 
 	$('#category-add-toggle').click( function() {
 		$(this).parents('div:first').toggleClass( 'wp-hidden-children' );
-		$('#category-tabs a[href="#categories-all"]').click();
+		$('#category-tabs a[href="/teatroinvito/v4/#categories-all"]').click();
 		$('#newcategory').focus();
 		return false;
 	} );

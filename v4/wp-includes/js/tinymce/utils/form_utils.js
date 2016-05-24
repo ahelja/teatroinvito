@@ -17,7 +17,7 @@ function getColorPickerHTML(id, target_form_element) {
 		label.id = label.id || dom.uniqueId();
 	}
 
-	h += '<a role="button" aria-labelledby="' + id + '_label" id="' + id + '_link" href="javascript:;" onclick="tinyMCEPopup.pickColor(event,\'' + target_form_element +'\');" onmousedown="return false;" class="pickcolor">';
+	h += '<a role="button" aria-labelledby="' + id + '_label" id="' + id + '_link" href="/teatroinvito/v4/javascript:;" onclick="tinyMCEPopup.pickColor(event,\'' + target_form_element +'\');" onmousedown="return false;" class="pickcolor">';
 	h += '<span id="' + id + '" title="' + tinyMCEPopup.getLang('browse') + '">&nbsp;<span id="' + id + '_label" class="mceVoiceLabel mceIconOnly" style="display:none;">' + tinyMCEPopup.getLang('browse') + '</span></span></a>';
 
 	return h;
@@ -54,7 +54,7 @@ function getBrowserHTML(id, target_form_element, type, prefix) {
 		return "";
 
 	html = "";
-	html += '<a id="' + id + '_link" href="javascript:openBrowser(\'' + id + '\',\'' + target_form_element + '\', \'' + type + '\',\'' + option + '\');" onmousedown="return false;" class="browse">';
+	html += '<a id="' + id + '_link" href="/teatroinvito/v4/javascript:openBrowser(\'' + id + '\',\'' + target_form_element + '\', \'' + type + '\',\'' + option + '\');" onmousedown="return false;" class="browse">';
 	html += '<span id="' + id + '" title="' + tinyMCEPopup.getLang('browse') + '">&nbsp;</span></a>';
 
 	return html;

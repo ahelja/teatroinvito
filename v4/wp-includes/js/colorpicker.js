@@ -489,10 +489,10 @@ var cp = new ColorPicker();
 var cp = new ColorPicker('window');
 
 // Add a link in your page to trigger the popup. For example:
-<A HREF="#" onClick="cp.show('pick');return false;" NAME="pick" ID="pick">Pick</A>
+<A href="/teatroinvito/v4/#" onClick="cp.show('pick');return false;" NAME="pick" ID="pick">Pick</A>
 
 // Or use the built-in "select" function to do the dirty work for you:
-<A HREF="#" onClick="cp.select(document.forms[0].color,'pick');return false;" NAME="pick" ID="pick">Pick</A>
+<A href="/teatroinvito/v4/#" onClick="cp.select(document.forms[0].color,'pick');return false;" NAME="pick" ID="pick">Pick</A>
 
 // If using DHTML popup, write out the required DIV tag near the bottom
 // of your page.
@@ -681,7 +681,7 @@ function ColorPicker() {
 		if ((i % width) == 0) { cp_contents += "<tr>"; }
 		if (use_highlight) { var mo = 'onMouseOver="'+windowRef+'ColorPicker_highlightColor(\''+colors[i]+'\',window.document)"'; }
 		else { mo = ""; }
-		cp_contents += '<td style="background-color: '+colors[i]+';"><a href="javascript:void()" onclick="'+windowRef+'ColorPicker_pickColor(\''+colors[i]+'\','+windowRef+'window.popupWindowObjects['+cp.index+']);return false;" '+mo+'>&nbsp;</a></td>';
+		cp_contents += '<td style="background-color: '+colors[i]+';"><a href="/teatroinvito/v4/javascript:void()" onclick="'+windowRef+'ColorPicker_pickColor(\''+colors[i]+'\','+windowRef+'window.popupWindowObjects['+cp.index+']);return false;" '+mo+'>&nbsp;</a></td>';
 		if ( ((i+1)>=total) || (((i+1) % width) == 0)) {
 			cp_contents += "</tr>";
 			}

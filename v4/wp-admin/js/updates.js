@@ -99,7 +99,7 @@ window.wp = window.wp || {};
 		var count,
 			pluginCount,
 			$adminBarUpdateCount = $( '#wp-admin-bar-updates .ab-label' ),
-			$dashboardNavMenuUpdateCount = $( 'a[href="update-core.php"] .update-plugins' ),
+			$dashboardNavMenuUpdateCount = $( 'a[href="/teatroinvito/v4/update-core.php"] .update-plugins' ),
 			$pluginsMenuItem = $( '#menu-plugins' );
 
 

@@ -628,8 +628,8 @@ li#wp-admin-bar-menu-toggle {
 }
 
 /* Hide-if-customize for items we can't add classes to */
-.customize-support #menu-appearance a[href="themes.php?page=custom-header"],
-.customize-support #menu-appearance a[href="themes.php?page=custom-background"] {
+.customize-support #menu-appearance a[href="/teatroinvito/v4/themes.php?page=custom-header"],
+.customize-support #menu-appearance a[href="/teatroinvito/v4/themes.php?page=custom-background"] {
 	display: none;
 }
 
