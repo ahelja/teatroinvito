@@ -4160,16 +4160,17 @@ POSTS & CONTENT STYLES
 #content #inner-content {
   padding: 4rem 0rem 1rem 0rem;
   border-style: solid;
-  border-color: white;
+  border-color: #fefefe;
   border-width: 0 1rem; }
-  @media screen and (max-width: 1024px) {
-    #content #inner-content {
-      border-color: #F0EEE5; } }
+
+@media screen and (max-width: 1024px) {
+  #content #inner-content.row.khaki-body {
+    border-color: #F0EEE5; } }
 
 #content-contact #inner-content {
   padding: 4rem 0rem 1rem 0rem;
   border-style: solid;
-  border-color: white;
+  border-color: #fefefe;
   border-width: 0 1rem; }
 
 .page-title .vcard {
