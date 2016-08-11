@@ -4715,7 +4715,6 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 4rem 0rem 1rem 0rem;
   border-style: solid;
   border-color: #fefefe;
   border-width: 0 1rem; }
@@ -4724,7 +4723,6 @@ POSTS & CONTENT STYLES
     border-color: #F0EEE5; } }
 
 #content-contact #inner-content {
-  padding: 4rem 0rem 1rem 0rem;
   border-style: solid;
   border-color: #fefefe;
   border-width: 0 1rem; }
