@@ -221,7 +221,7 @@ class Tabs {
       idStr = `#${idStr}`;
     }
 
-    var $target = this.$tabTitles.find(`[href="/teatroinvito/v4/${idStr}"]`).parent(`.${this.options.linkClass}`);
+    var $target = this.$tabTitles.find(`[href="${idStr}"]`).parent(`.${this.options.linkClass}`);
 
     this._handleTabChange($target);
   };

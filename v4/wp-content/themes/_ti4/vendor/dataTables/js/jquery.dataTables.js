@@ -9341,7 +9341,7 @@
 		 *       "url": "data.json",
 		 *       "dataSrc": function ( json ) {
 		 *         for ( var i=0, ien=json.length ; i<ien ; i++ ) {
-		 *           json[i][0] = '<a href="/teatroinvito/v4//message/'+json[i][0]+'>View message</a>';
+		 *           json[i][0] = '<a href="/message/'+json[i][0]+'>View message</a>';
 		 *         }
 		 *         return json;
 		 *       }
@@ -11774,7 +11774,7 @@
 		 *          "targets": [ 0 ],
 		 *          "data": "download_link",
 		 *          "render": function ( data, type, full ) {
-		 *            return '<a href="/teatroinvito/v4/'+data+'">Download</a>';
+		 *            return '<a href="'+data+'">Download</a>';
 		 *          }
 		 *        } ]
 		 *      } );
